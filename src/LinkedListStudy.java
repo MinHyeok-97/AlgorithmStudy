@@ -4,8 +4,9 @@ public class LinkedListStudy {
         head.append(1);
         head.append(2);
         head.append(3);
+        head.append(2);
         head.retrieve();
-        head.delete(1);
+        head.removeDups();
         head.retrieve();
     }
 }
@@ -50,6 +51,22 @@ class LinkedList {
             } else {
                 n = n.next;
             }
+        }
+    }
+
+    void removeDups() {
+        Node n = header;
+
+        while (n.next != null) {
+            Node r = n;
+            while (r.next != null) {
+                if (n.data == r.next.data) {
+                    r.next = r.next.next;
+                } else {
+                    r = r.next;
+                }
+            }
+            n = n.next;
         }
     }
 
