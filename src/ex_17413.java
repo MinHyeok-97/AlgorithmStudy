@@ -24,11 +24,11 @@ public class ex_17413 {
 
                 sb.append(c);
             } else if (tag) {
-                sb.append(c);
-
                 if (c == '>') {
                     tag = false;
                 }
+
+                sb.append(c);
             }
             else {
                 stack.push(c);
