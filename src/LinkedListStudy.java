@@ -1,22 +1,13 @@
-public class LinkedListStudy {
-    public static void main(String[] args) {
-        LinkedList head = new LinkedList();
-        head.append(1);
-        head.append(2);
-        head.append(3);
-        head.append(2);
-        head.retrieve();
-        head.removeDups();
-        head.retrieve();
-    }
-}
-
 class LinkedList {
     Node header;
 
     static class Node {
         int data;
         Node next = null;
+    }
+
+    LinkedList() {
+        header = new Node();
     }
 
     void retrieve() {
@@ -57,7 +48,7 @@ class LinkedList {
     void removeDups() {
         Node n = header;
 
-        while (n.next != null) {
+        while (n != null && n.next != null) {
             Node r = n;
             while (r.next != null) {
                 if (n.data == r.next.data) {
@@ -69,10 +60,16 @@ class LinkedList {
             n = n.next;
         }
     }
-
-    LinkedList() {
-        header = new Node();
-    }
 }
 
+public class LinkedListStudy {
+    public static void main(String[] args) {
+        LinkedList ll = new LinkedList();
+        ll.append(1);
+        ll.append(2);
+        ll.append(3);
+        ll.append(4);
+        ll.retrieve();
 
+    }
+}
