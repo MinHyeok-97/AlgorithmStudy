@@ -9,7 +9,8 @@ public class ex_10808 {
         int[] cntArr = new int[26];
 
         for (int i = 0; i < s.length(); i++) {
-            cntArr[(int)s.charAt(i) - 97]++;
+            //cntArr[(int)s.charAt(i) - 97]++;
+            cntArr[s.charAt(i) - 'a']++;
         }
 
         for (int i = 0; i < cntArr.length; i++) {
