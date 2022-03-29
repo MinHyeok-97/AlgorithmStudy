@@ -2,6 +2,7 @@ package inflearn.string;
 
 import java.io.*;
 
+//대소문자 변환
 public class ex_2 {
     static String solution(String str) {
         String answer = "";
