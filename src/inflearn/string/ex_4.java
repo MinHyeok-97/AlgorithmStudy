@@ -19,7 +19,7 @@ public class ex_4 {
         }
 
         for(int i = 0; i < ch.length; i++) {
-            answer += String.valueOf(ch[i]);
+            answer += ch[i];
         }
 
         return answer;
