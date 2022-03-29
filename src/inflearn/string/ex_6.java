@@ -2,6 +2,7 @@ package inflearn.string;
 
 import java.io.*;
 
+//중복 문자 제거
 public class ex_6 {
     static String solution(String str) {
         String answer = "";
