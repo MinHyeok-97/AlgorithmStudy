@@ -5,14 +5,22 @@ import java.io.*;
 //단어 뒤집기
 public class ex_4 {
     static String solution(String str) {
-        String answer = new StringBuilder(str).reverse().toString();
+//        String answer = new StringBuilder(str).reverse().toString();
+        String answer = "";
+        char[] ch = str.toCharArray();
+        int lt = 0, rt = ch.length - 1;
 
-//        String answer = "";
-//        char[] ch = str.toCharArray();
-//
-//        for(int i = ch.length - 1; i >= 0; i--) {
-//            answer += ch[i];
-//        }
+        while (lt < rt) {
+            char temp = ch[lt];
+            ch[lt] = ch[rt];
+            ch[rt] = temp;
+            lt++;
+            rt--;
+        }
+
+        for(int i = 0; i < ch.length; i++) {
+            answer += String.valueOf(ch[i]);
+        }
 
         return answer;
     }
