@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+//큰 수 출력하기
 public class ex_1 {
     static ArrayList<Integer> solution(int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();

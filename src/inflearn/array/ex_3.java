@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+//가위 바위 보
 public class ex_3 {
     static ArrayList<Character> solution(int n, int[] a, int[] b) {
         ArrayList<Character> answer = new ArrayList<>();

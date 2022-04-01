@@ -3,6 +3,7 @@ package inflearn.array;
 import java.io.*;
 import java.util.StringTokenizer;
 
+//보이는 학생
 public class ex_2 {
     static int solution(int[] arr) {
         int answer = 0, max = 0;
