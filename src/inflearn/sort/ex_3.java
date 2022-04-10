@@ -18,7 +18,6 @@ public class ex_3 {
                     break;
                 }
             }
-
             answer[j + 1] = temp;
         }
 
