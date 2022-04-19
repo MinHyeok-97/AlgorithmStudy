@@ -11,7 +11,7 @@ public class ex_3 {
         length = new int[cnt];
         length[0] = 1;
 
-        int answer = length[0];
+        int answer = length[0]; //arr 길이가 1일때 0을 출력하지 않기 위해서..
 
         for (int i = 1; i < cnt; i++) {
             int max = 0;
