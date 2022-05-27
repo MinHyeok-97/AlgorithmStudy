@@ -23,8 +23,14 @@ public class ex_9 {
 
     static int solution(int n, int m, int[] arr) {
         int answer = 0;
-        int lt = Arrays.stream(arr).max().getAsInt();
-        int rt = Arrays.stream(arr).sum();
+//        int lt = Arrays.stream(arr).max().getAsInt();
+//        int rt = Arrays.stream(arr).sum();
+        int lt = 0, rt = 0;
+
+        for (int i = 0; i < n; i++) {
+            lt = Math.max(lt, arr[i]);
+            rt += arr[i];
+        }
 
         while (lt <= rt) {
             int mid = (lt + rt) / 2;
