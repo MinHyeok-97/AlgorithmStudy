@@ -22,6 +22,10 @@ public class ex_7 {
             }
         }
 
+        if (!queue.isEmpty()) {
+            return "NO";
+        }
+
         return answer;
     }
     public static void main(String[] args) throws IOException {
