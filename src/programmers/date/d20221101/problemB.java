@@ -1,9 +1,9 @@
-package programmers.date;
+package programmers.date.d20221101;
 
 import java.io.*;
 
 //다음 큰 숫자
-public class D20221101b {
+public class problemB {
     static int solution(int n) {
         int answer = 0;
 

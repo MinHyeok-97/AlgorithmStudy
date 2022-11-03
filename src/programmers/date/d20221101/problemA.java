@@ -1,9 +1,9 @@
-package programmers.date;
+package programmers.date.d20221101;
 
 import java.io.*;
 
 //피보나치 수
-public class D20221101a {
+public class problemA {
     static int[] f;
     static int solution(int n) {
         f = new int[n + 1];
