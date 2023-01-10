@@ -44,6 +44,7 @@ public class BOJ10825 {
 
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
 
         int n = Integer.parseInt(br.readLine());
         ArrayList<Exam> arr = new ArrayList<>();
@@ -62,7 +63,9 @@ public class BOJ10825 {
         Collections.sort(arr);
 
         for (Exam s : arr) {
-            System.out.println(s.name);
+            sb.append(s.name).append("\n");
         }
+
+        System.out.println(sb);
     }
 }
